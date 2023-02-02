@@ -1,4 +1,4 @@
-import * as React from "react";
+import React, { useEffect, useState } from "react";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
@@ -16,7 +16,7 @@ import { useNavigate } from "react-router-dom";
 
 const Sidebar = ({ mode, setMode }) => {
   const [anchorElNav, setAnchortElNav] = useState(null);
-  constt[(anchorElUser, setAnchorElUser)] = useState(null);
+  const[anchorElUser, setAnchorElUser] = useState(null);
 
   const navigate = useNavigate();
 
